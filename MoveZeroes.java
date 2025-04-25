@@ -5,7 +5,7 @@ class Solution {
         if(len==1) return ;
         for(int i=0;i<len;i++){
             if(nums[i]!=0){
-                nums[ind]=nums[i];
+                if(i!=ind)nums[ind]=nums[i];
                 ind++;
             }
         }
